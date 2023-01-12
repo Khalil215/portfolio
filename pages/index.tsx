@@ -1,9 +1,13 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import { Inter } from '@next/font/google'
-import styles from '../styles/Home.module.css'
+import Head from "next/head";
+import { Inter } from "@next/font/google";
+import Hero from "../components/Home";
+import About from "../components/About";
+import Skills from "../components/Skills";
+import Projects from "../components/Projects";
+import Contact from "../components/Contact";
+import Header from "../components/Header";
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
@@ -14,7 +18,30 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className='text-red-500'>Hello world</div>
+
+      <div className=" h-screen snap snap-y overflow-scroll overflow-x-hidden bg-gray-900 scrollbar scrollbar-track-gray-400 scrollbar-thumb-gray-900">
+
+        <Header/>
+        <section id="home" className="snap-center">
+          <Hero />
+        </section>
+
+        <section id="about" className="snap-start">
+          <About />
+        </section>
+
+        <section id="skills" className="snap-center">
+          <Skills />
+        </section>
+
+        <section id="projects" className="snap-center">
+          <Projects />
+        </section>
+
+        <section id="contact" className="snap-center">
+          <Contact />
+        </section>
+      </div>
     </>
-  )
+  );
 }
