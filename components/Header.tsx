@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import Link from 'next/link'
+// import Link from 'next/link'
 import React from 'react'
 
 
@@ -12,10 +12,10 @@ function Header({}: Props) {
       initial={{y:-200, opacity:0, scale:0.9}}
       animate={{y:0, opacity:1, scale:1 }} transition={{duration:1.5}}>
         
-        <Link href='#about'><button className='btn'>About</button></Link>
-        <Link href='#skills'><button className='btn'>Skills</button></Link>
-        <Link href='#projects'><button className='btn'>Projects</button></Link>
-        <Link href='#contact'><button className='btn'>Contact</button></Link>
+        <a href='#about'><button className='btn'>About</button></a>
+        <a href='#skills'><button className='btn'>Skills</button></a>
+        <a href='#projects'><button className='btn'>Projects</button></a>
+        <a href='#contact'><button className='btn'>Contact</button></a>
       </motion.div>
     </nav>
   )
