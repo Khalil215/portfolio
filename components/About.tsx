@@ -32,21 +32,21 @@ function About({}: Props) {
         transition={{ duration: 1.2 }}
         viewport={{ once: true }}
         >
-          <SocialIcon className="" url="https://www.youtube.com" />
-          <SocialIcon className="" url="https://www.youtube.com" />
+          <SocialIcon url="https://www.youtube.com" />
+          <SocialIcon  url="https://api.whatsapp.com/send?phone=+2347060572712" />
           <SocialIcon network="email" />
           <SocialIcon network="email" />
         </motion.div>
       </div>
 
-      <div className="w-1/2">
+      <div className="md:w-1/2">
         <div className="text-gray-200 md:w-3/4">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
           repudiandae porro, nobis, amet voluptates placeat in incidunt sint hic
           dolorum tempore laborum. Nam neque enim labore praesentium dicta vitae
           sequi.
         </div>
-        <button className="mt-5 bg-transparent border border-gray-400 p-2 rounded font-semibold text-gray-400 hover:bg-gray-400 hover:text-gray-900 duration-300 hover:animate-pulse"><a href="/Khalil's-CV.pdf" download>Download CV</a></button>
+        <button className="mt-5 bg-transparent border border-gray-400 p-2 rounded font-semibold text-gray-400 hover:bg-gray-400 hover:text-gray-900 duration-300 hover:animate-pulse"><a href="/Khalil's-CV.pdf" download>Download Resume</a></button>
       </div>
     </div>
   );

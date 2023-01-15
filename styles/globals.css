@@ -10,4 +10,11 @@
   .head{
     @apply absolute top-20 uppercase tracking-[18px] text-gray-400 text-xl text-center
   }
+  .input{
+    @apply outline-none w-full p-3 bg-gray-800 border-b border-gray-800 placeholder:text-gray-500/40 rounded
+   text-gray-400 transition-all hover:border-gray-200/50 focus:border-gray-200/50 focus:text-gray-200}
+}
+
+body{
+  font-family: var(--my-font);
 }

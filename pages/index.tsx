@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { Inter } from "@next/font/google";
+import { Inter, Nunito_Sans } from "@next/font/google";
 import Hero from "../components/Home";
 import About from "../components/About";
 import Skills from "../components/Skills";
@@ -7,7 +7,7 @@ import Projects from "../components/Projects";
 import Contact from "../components/Contact";
 import Header from "../components/Header";
 
-const inter = Inter({ subsets: ["latin"] });
+const nunito = Nunito_Sans({weight: '400', variable: '--my-font'});
 
 export default function Home() {
   return (
@@ -19,7 +19,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className="relative h-screen snap snap-y overflow-scroll bg-gray-900 scrollbar scrollbar-track-gray-400 scrollbar-thumb-gray-900">
+      <div className="relative h-screen snap snap-y overflow-scroll bg-gray-900 scrollbar scrollbar-track-gray-400 scrollbar-thumb-gray-900 " style={nunito.style}>
 
         <Header/>
         <section id="home" className="snap-center">

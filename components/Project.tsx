@@ -46,8 +46,8 @@ function Project({}: Props) {
             nostrum, debitis earum? Quos.
           </div>
           <div className="space-x-3">
-          <button className="bg-transparent border border-gray-400 p-1 rounded font-semibold text-gray-400 hover:bg-gray-400 hover:text-gray-900 duration-300 hover:animate-pulse"><Link href="/Khalil's-CV.pdf" download>GitHub</Link></button>
-          <button className="bg-transparent border border-gray-400 p-1 rounded font-semibold text-gray-400 hover:bg-gray-400 hover:text-gray-900 duration-300 hover:animate-pulse"><Link href="/Khalil's-CV.pdf" download>Preview</Link></button>
+          <button className="bg-transparent border border-gray-400 p-1 rounded font-semibold text-gray-400 hover:bg-gray-400 hover:text-gray-900 duration-300 hover:animate-pulse tracking-wider"><Link href="/Khalil's-CV.pdf" download>GitHub</Link></button>
+          <button className="bg-transparent border border-gray-400 p-1 rounded font-semibold text-gray-400 hover:bg-gray-400 hover:text-gray-900 duration-300 hover:animate-pulse tracking-wider"><Link href="/Khalil's-CV.pdf" download>Preview</Link></button>
           </div>
         </motion.div>      
     </div>
