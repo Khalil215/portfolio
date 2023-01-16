@@ -26,16 +26,16 @@ function About({}: Props) {
             className="rounded-full md:rounded"
           />
         </motion.div>
-        <motion.div className="flex justify-center gap-2"
+        <motion.div className="flex justify-center gap-4"
         initial={{ x: -200, opacity: 0 }}
         whileInView={{ x: 0, opacity: 1 }}
         transition={{ duration: 1.2 }}
         viewport={{ once: true }}
         >
-          <SocialIcon url="https://www.youtube.com" />
+          <SocialIcon className='hover:animate-bounce' url="https://github.com/Khalil215" />
           <SocialIcon  url="https://api.whatsapp.com/send?phone=+2347060572712" />
-          <SocialIcon network="email" />
-          <SocialIcon network="email" />
+          <SocialIcon url="https://twitter.com/Hammanibrahim_" />
+          <SocialIcon url="https://www.linkedin.com/in/ibrahim-hamman-23732125a/"/>
         </motion.div>
       </div>
 
@@ -46,7 +46,7 @@ function About({}: Props) {
           dolorum tempore laborum. Nam neque enim labore praesentium dicta vitae
           sequi.
         </div>
-        <button className="mt-5 bg-transparent border border-gray-400 p-2 rounded font-semibold text-gray-400 hover:bg-gray-400 hover:text-gray-900 duration-300 hover:animate-pulse"><a href="/Khalil's-CV.pdf" download>Download Resume</a></button>
+        <button className="mt-5 bg-transparent border border-gray-400 p-2 rounded font-semibold text-gray-400 hover:bg-gray-400 hover:text-gray-900 duration-300 hover:animate-pulse tracking-wider"><a href="/Khalil's-CV.pdf" download>Download Resume</a></button>
       </div>
     </div>
   );

@@ -9,7 +9,7 @@ function Contact({}: Props) {
   const [sent, setSent] = useState(false);
   const form = createRef<any>();
   const timeout = function showTimeout(){
-    setTimeout(()=>setSent(false), 5000);
+    setTimeout(()=>setSent(false), 10000);
   }
 
   const sendEmail = (e: any) => {
