@@ -3,9 +3,13 @@ import { Phone, Mail, CheckCircle } from "react-feather";
 import Footer from "./Footer";
 import emailjs from "emailjs-com";
 
-type Props = {};
+type Props = {
+  contact:any
+};
 
-function Contact({}: Props) {
+function Contact({contact}: Props) {
+  // console.log(contact);
+  
   const [sent, setSent] = useState(false);
   const form = createRef<any>();
   const timeout = function showTimeout(){
@@ -41,7 +45,7 @@ function Contact({}: Props) {
               <div className="text-lg font-semibold tracking-wider">
                 Call me
               </div>
-              <div>+234 706 057 2712</div>
+              <div>{contact.phoneNumber}</div>
             </div>
           </div>
           <a
@@ -53,7 +57,7 @@ function Contact({}: Props) {
             </div>
             <div className="grid justify-items-start">
               <div className="text-lg font-semibold tracking-wider">Email</div>
-              <div>ibrahimhamman215@gmail.com</div>
+              <div>{contact.email}</div>
             </div>
           </a>
         </div>

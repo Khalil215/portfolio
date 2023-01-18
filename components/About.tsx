@@ -2,11 +2,17 @@ import Image from "next/image";
 import React from "react";
 import { motion } from "framer-motion";
 import { SocialIcon } from "react-social-icons";
+import { urlFor } from "../sanity";
 
+type Props = {
+  mInfo: any;
+  social: any;
+};
 
-type Props = {};
+function About({ mInfo, social }: Props) {
+  const src = urlFor(mInfo?.aboutImage).url();
+  // console.log(social);
 
-function About({}: Props) {
   return (
     <div className="relative flex flex-col gap-5 md:flex-row items-center justify-center h-screen text-center md:text-left w-[90%] md:w-[80%] mx-auto">
       <h2 className="head">About</h2>
@@ -18,35 +24,37 @@ function About({}: Props) {
           transition={{ duration: 1.2 }}
           viewport={{ once: true }}
         >
-          <Image
-            fill
-            src="/me2.jpg"
-            alt="my picture"
-            objectFit="cover"
-            className="rounded-full md:rounded"
-          />
+          {mInfo.aboutImage && (
+            <Image
+              loader={() => src}
+              fill
+              src={src}
+              alt="my picture"
+              objectFit="cover"
+              className="rounded-full md:rounded"
+            />
+          )}
         </motion.div>
-        <motion.div className="flex justify-center gap-4"
-        initial={{ x: -200, opacity: 0 }}
-        whileInView={{ x: 0, opacity: 1 }}
-        transition={{ duration: 1.2 }}
-        viewport={{ once: true }}
+        <motion.div
+          className="flex justify-center gap-4"
+          initial={{ x: -200, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{ duration: 1.2 }}
+          viewport={{ once: true }}
         >
-          <SocialIcon className='hover:animate-bounce' url="https://github.com/Khalil215" />
-          <SocialIcon  url="https://api.whatsapp.com/send?phone=+2347060572712" />
-          <SocialIcon url="https://twitter.com/Hammanibrahim_" />
-          <SocialIcon url="https://www.linkedin.com/in/ibrahim-hamman-23732125a/"/>
+          {social.map((s:any) => (
+            <SocialIcon key={s.title} target="_blank" className="hover:animate-bounce" url={s.url} />
+          ))}
         </motion.div>
       </div>
 
       <div className="md:w-1/2">
-        <div className="text-gray-200 md:w-3/4">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
-          repudiandae porro, nobis, amet voluptates placeat in incidunt sint hic
-          dolorum tempore laborum. Nam neque enim labore praesentium dicta vitae
-          sequi.
-        </div>
-        <button className="mt-5 bg-transparent border border-gray-400 p-2 rounded font-semibold text-gray-400 hover:bg-gray-400 hover:text-gray-900 duration-300 hover:animate-pulse tracking-wider"><a href="/Khalil's-CV.pdf" download>Download Resume</a></button>
+        <div className="text-gray-200 md:w-3/4 tracking-wide">{mInfo?.about}</div>
+        <button className="mt-5 bg-transparent border border-gray-400 p-2 rounded font-semibold text-gray-400 hover:bg-gray-400 hover:text-gray-900 duration-300 hover:animate-pulse tracking-wider">
+          <a href="/Khalil's-CV.pdf" download>
+            Download Resume
+          </a>
+        </button>
       </div>
     </div>
   );
