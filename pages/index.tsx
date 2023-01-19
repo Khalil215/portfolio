@@ -88,6 +88,6 @@ export const getStaticProps = async () => {
       project,
       contact,
     },
-    revalidate: 10000
+    revalidate: 10,
   };
 };
