@@ -14,11 +14,11 @@ function About({ mInfo, social }: Props) {
   // console.log(social);
 
   return (
-    <div className="relative flex flex-col gap-5 md:flex-row items-center justify-center h-screen text-center md:text-left w-[90%] md:w-[80%] mx-auto">
+    <div className="relative flex flex-col gap-5 md:flex-row items-center justify-center h-screen text-center text-sm md:text-left w-[90%] md:w-[80%] mx-auto">
       <h2 className="head">About</h2>
-      <div className="mt-10 ">
+      <div className="mt-32 md:mt-10 ">
         <motion.div
-          className="relative w-56 h-56 justify-self-center md:w-[400px] md:h-[250px] mb-5 "
+          className="relative w-[215px] h-[215px]  justify-self-center md:w-[400px] md:h-[250px] mb-5 "
           initial={{ x: -200, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
           transition={{ duration: 1.2 }}

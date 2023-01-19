@@ -4,7 +4,7 @@
 
 @layer components{
   .btn {
-    @apply tracking-widest font-semibold px-5 py-2 border border-transparent hover:border hover:border-gray-700 uppercase text-sm rounded-full duration-200
+    @apply tracking-widest font-semibold px-3 md:px-5 py-2 border border-transparent hover:border hover:border-gray-700 uppercase text-xs rounded-full duration-200
   }
 
   .head{

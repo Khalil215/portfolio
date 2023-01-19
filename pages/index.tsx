@@ -37,7 +37,7 @@ export default function Home({mInfo, social, skill, project, contact,
       </Head>
 
       <div
-        className="relative h-screen snap snap-y overflow-scroll bg-gray-900 scrollbar scrollbar-track-gray-400 scrollbar-thumb-gray-900 "
+        className="relative w-screen h-screen md:snap md:snap-y overflow-scroll overflow-x-hidden bg-gray-900 scrollbar scrollbar-track-gray-400 scrollbar-thumb-gray-900 "
         style={nunito.style}
       >
         <Header />

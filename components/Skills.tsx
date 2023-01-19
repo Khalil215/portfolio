@@ -12,15 +12,15 @@ function Skills({ skill }: Props) {
 
   return (
     <>
-      <div className="relative flex flex-col gap-5 items-center justify-center h-screen ">
+      <div className="relative flex flex-col gap-5 items-center justify-center w-screen h-screen ">
         <h2 className="head">Skills</h2>
-        <div className=" grid grid-cols-3 gap-6">
+        <div className=" grid grid-cols-3 gap-4 md:gap-6">
           {skill.slice(0, skill.length / 2).map((skill: any) => {
             const src = urlFor(skill?.skillImage).url();
             return (
               <motion.div
               key={skill.title}
-                initial={{ x: -200, opacity: 0 }}
+                initial={{ x: -100, opacity: 0 }}
                 whileInView={{ x: 0, opacity: 1 }}
                 transition={{ duration: 1.5 }}
                 viewport={{ once: true }}
@@ -43,7 +43,7 @@ function Skills({ skill }: Props) {
             return (
               <motion.div
               key={skill.title}
-                initial={{ x: 200, opacity: 0 }}
+                initial={{ x: 100, opacity: 0 }}
                 whileInView={{ x: 0, opacity: 1 }}
                 transition={{ duration: 1.5 }}
                 viewport={{ once: true }}
