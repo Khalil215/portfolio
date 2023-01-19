@@ -1,4 +1,4 @@
 {
   "version": 2,
-  "rewrites": [{ "source": "/(.*)", "destination": "/pages/index.tsx" }]
+  "rewrites": [{ "source": "/(.*)", "destination": "/index.tsx" }]
 }
