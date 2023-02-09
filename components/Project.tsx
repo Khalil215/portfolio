@@ -12,7 +12,7 @@ function Project({ project }: Props) {
   const src1 = urlFor(project?.projectImage).url();
 
   return (
-    <div className="opacity-60 transition-opacity duration-200 mt-6 hover:opacity-100 h-[75vh] shadow-lg">
+    <div className="opacity-60 transition-opacity duration-200 mt-6 hover:opacity-100 h-[50vh] shadow-lg">
       <motion.div
         className="w-[340px] md:w-[450px] space-y-2 lg:w-[550px] bg-gray-800 h-full rounded-lg p-3 bg grid "
         initial={{ y: -100, opacity: 0 }}
@@ -49,9 +49,9 @@ function Project({ project }: Props) {
             );
           })}
         </div>
-        <div className="text-sm text-gray-200">
+        {/* <div className="text-sm text-gray-200">
           {project.summary}
-        </div>
+        </div> */}
         <div className="space-x-3">
           <button className="bg-transparent border border-gray-400 p-1 rounded font-semibold text-gray-400 hover:bg-gray-400 hover:text-gray-900 duration-300 hover:animate-pulse tracking-wider">
             <Link href={project.gitUrl} target="_blank">
