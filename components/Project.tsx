@@ -12,7 +12,7 @@ function Project({ project }: Props) {
   const src1 = urlFor(project?.projectImage).url();
 
   return (
-    <div className="opacity-60 transition-opacity duration-200 mt-6 hover:opacity-100 h-[50vh] shadow-lg">
+    <div className="opacity-60 transition-opacity duration-200 mt-6 hover:opacity-100 h-[60vh] shadow-lg">
       <motion.div
         className="w-[340px] md:w-[450px] space-y-2 lg:w-[550px] bg-gray-800 h-full rounded-lg p-3 bg grid "
         initial={{ y: -100, opacity: 0 }}
