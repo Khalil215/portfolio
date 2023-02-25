@@ -24,7 +24,7 @@ function Skills({ skill }: Props) {
                 whileInView={{ x: 0, opacity: 1 }}
                 transition={{ duration: 1.5 }}
                 viewport={{ once: true }}
-                className="relative w-18 h-18"
+                className="relative w-16 h-16"
               >
                 <Image
                   key={skill.title}
@@ -47,7 +47,7 @@ function Skills({ skill }: Props) {
                 whileInView={{ x: 0, opacity: 1 }}
                 transition={{ duration: 1.5 }}
                 viewport={{ once: true }}
-                className="relative w-18 h-18"
+                className="relative w-16 h-16"
               >
                 <Image
                   key={skill.title}
