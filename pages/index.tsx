@@ -69,7 +69,7 @@ export const getStaticProps = async () => {
   const minfoQuery = groq`*[_type == "mInfo"][0]`;
   const socialQuery = groq`*[_type == "social"]`;
   const skillQuery = groq`*[_type == "skill"]|order(_createdAt asc)`;
-  const projectQuery = groq`*[_type == "project"]|order(_createdAt asc){
+  const projectQuery = groq`*[_type == "project"]|order(_updatedAt desc){
     ..., 
     technologies[]->}`;
   const contactQuery = groq`*[_type == "contact"][0]`;
