@@ -31,6 +31,7 @@ function About({ mInfo, social }: Props) {
               src={src}
               alt="my picture"
               objectFit="cover"
+              objectPosition="left"
               className="rounded-full md:rounded"
             />
           )}
