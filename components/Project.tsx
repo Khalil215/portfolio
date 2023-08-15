@@ -54,11 +54,6 @@ function Project({ project }: Props) {
         </div> */}
         <div className="space-x-3">
           <button className="bg-transparent border border-gray-400 p-1 rounded font-semibold text-gray-400 hover:bg-gray-400 hover:text-gray-900 duration-300 hover:animate-pulse tracking-wider">
-            <Link href={project.gitUrl} target="_blank">
-              GitHub
-            </Link>
-          </button>
-          <button className="bg-transparent border border-gray-400 p-1 rounded font-semibold text-gray-400 hover:bg-gray-400 hover:text-gray-900 duration-300 hover:animate-pulse tracking-wider">
             <Link href={project.liveUrl} target="_blank" >
               Preview
             </Link>
