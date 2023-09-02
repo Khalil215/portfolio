@@ -52,7 +52,7 @@ function About({ mInfo, social }: Props) {
       <div className="md:w-1/2">
         <div className="text-gray-200 md:w-3/4 tracking-wide">{mInfo?.about}</div>
         <button className="mt-5 bg-transparent border border-gray-400 p-2 rounded font-semibold text-gray-400 hover:bg-gray-400 hover:text-gray-900 duration-300 hover:animate-pulse tracking-wider">
-          <a href="https://drive.google.com/file/d/1YxJwYdoDPHypy4BxjU3-2zT6FADbdWag/view?usp=drivesdk" target="_blank" rel="noopener noreferrer">
+          <a href="https://drive.google.com/file/d/1ptNjoCf5Qr2n0e5o9MVHkbt_Ksy2LFwC/view?usp=drive_link" target="_blank" rel="noopener noreferrer">
           Resume
           </a>
         </button>
