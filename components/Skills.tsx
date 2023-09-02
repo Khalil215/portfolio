@@ -14,7 +14,7 @@ function Skills({ skill }: Props) {
     <>
       <div className="relative flex flex-col gap-5 items-center justify-center w-screen h-screen ">
         <h2 className="head">Skills</h2>
-        <div className=" grid grid-cols-3 gap-2 md:gap-4">
+        <div className=" grid grid-cols-4 gap-2 md:gap-4">
           {skill.slice(0, skill.length / 2).map((skill: any) => {
             const src = urlFor(skill?.skillImage).url();
             return (
