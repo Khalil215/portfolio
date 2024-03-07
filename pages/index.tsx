@@ -22,11 +22,7 @@ const nunito = Nunito_Sans({ weight: "400", variable: "--my-font" });
 
 export default function Home({mInfo, social, skill, project, contact,
 }: Props) {
-  // console.log(mInfo,
-  //   social,
-  //   skill,
-  //   project,
-  //   contact,);
+
   return (
     <>
       <Head>

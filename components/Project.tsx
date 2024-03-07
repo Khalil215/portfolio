@@ -14,7 +14,7 @@ function Project({ project }: Props) {
   return (
     <div className="opacity-60 transition-opacity duration-200 mt-6 hover:opacity-100 h-[65vh] shadow-lg">
       <motion.div
-        className="w-[340px] md:w-[450px] space-y-2 lg:w-[550px] bg-gray-800 h-full rounded-lg p-3 bg grid "
+        className="w-[400px] md:w-[450px] space-y-2 lg:w-[550px] bg-gray-800 h-full rounded-lg p-3 bg grid "
         initial={{ y: -100, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 1.2 }}
@@ -32,7 +32,7 @@ function Project({ project }: Props) {
         <div className="text-gray-200 font-semibold text-2xl">
           {project.title}
         </div>
-        <div className="flex justify-center gap-3">
+        <div className="flex justify-center flex-wrap gap-3">
           {project.technologies.map((tech: any) => {
             const src2 = urlFor(tech.skillImage).url();
             return (
